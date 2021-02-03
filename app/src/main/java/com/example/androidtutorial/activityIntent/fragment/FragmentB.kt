@@ -26,7 +26,6 @@ class FragmentB : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         getInput()
 //        getDataBundle()
-
     }
 
     private fun getDataBundle() {

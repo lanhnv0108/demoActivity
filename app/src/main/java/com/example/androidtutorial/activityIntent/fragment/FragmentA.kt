@@ -34,7 +34,7 @@ open class FragmentA : Fragment() {
         btn_Send.setOnClickListener {
             //sendData()
             sendInput()
-            //senDataBundle()
+//            senDataBundle()
         }
 
     }
@@ -78,6 +78,7 @@ open class FragmentA : Fragment() {
         setFragmentResult("VALUE", Bundle().apply {
             putString("DATA", input.text.toString())
             putString("DATA2" , "hello")
+
         })
     }
 
@@ -89,6 +90,6 @@ open class FragmentA : Fragment() {
         bundle.putString("DATA" , input.text.toString())
         val fr2 = FragmentB()
         fr2.arguments = bundle
-        addFragment(fr2 , R.id.fra2)
+//        addFragment(fr2 , R.id.fra2)
     }
 }
